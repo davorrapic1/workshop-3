@@ -45,3 +45,27 @@
 // for(var i = 0; i < 5; i++) {
 //     kod ide unutra
 // }
+ //                       0            1           2         3         4          5
+let listaImena = [{"name": "Stanislav"},{"name": "Patrizia"},{"name": "Martina"}, {"name":"Linda"}, {"name":"Marinela"}, {"name":"Kristian"}];
+
+const lista = document.getElementById("lista")
+
+
+
+const inputImena = document.getElementById('input');
+
+const button = document.getElementById('button')
+
+button.addEventListener('click', (event) => {
+
+    const newItem =  document.createElement('li')
+    newItem.innerHTML = inputImena.value
+    lista.appendChild(newItem)
+    inputImena.value = ''
+})
+
+for(var i = 0; i < listaImena.length; i++) {
+    const item = document.createElement('li')
+    item.innerHTML = listaImena[i].name;
+    lista.appendChild(item)
+}
