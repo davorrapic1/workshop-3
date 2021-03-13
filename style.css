@@ -1,0 +1,16 @@
+.dugme {
+    animation-name: dugmad;
+    animation-duration: 10s;
+}
+
+@keyframes dugmad {
+    50%  {background-color: yellow;}
+    25%  {background-color: red;}
+    75%  {background-color: green;}
+    0%   {background-color: blue;}
+    100% {background-color: white;}
+  }
+
+  .naslov {
+      color: red;
+  }
